@@ -698,7 +698,7 @@
     },
     "string_interpolation": {
       "name": "meta.interpolation.hcl",
-      "begin": "(\\G|[^%$])([%$]{)",
+      "begin": "(?<!\\G|[%$])([%$]{)",
       "end": "\\}",
       "comment": "String interpolation",
       "beginCaptures": {
